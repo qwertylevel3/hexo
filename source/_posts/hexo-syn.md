@@ -54,3 +54,13 @@ git add .
 git ci -m "更新内容"
 git push origin master
 ```
+
+***
+后来又发现一个问题,上传之后发现theme下面为空文件夹,推测是git的问题,尽管git status查看是正常的
+
+可以用
+```
+git rm -r --cached .
+```
+
+删除git当前的缓存,重新上传一下即可
